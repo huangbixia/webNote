@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>笔记</title>
+    <link rel="stylesheet" type="text/css" href="common.css"/>
+</head>
+<body>
+<div id="container">
+   <div id="innerContainer">
+       <!--左边部分-->
+       <div class="leftBox">
+           <!--左边固定菜单栏-->
+           <div class="leftNav">
+               <div class="logo"><img src="images/logo.png" alt="logo"/> </div>
+               <ul class="topNav">
+                   <li><img src="images/add1.png" alt="add"/><span>新增笔记</span></li>
+                   <li><img src="images/search1.png" alt="search"/><span>搜索</span></li>
+                   <li><img src="images/chat1.png" alt="chat"/><span>工作群聊</span></li>
+               </ul>
+               <ul class="bottomNav">
+                   <li><img src="images/start1.png" alt="start"/><span>快捷方式</span></li>
+                   <li><img src="images/note1.png" alt="note"/><span>笔记</span></li>
+                   <li><img src="images/noteBook1.png" alt="noteBook"/><span>笔记本</span></li>
+                   <li><img src="images/tag1.png" alt="tag"/><span>标签</span></li>
+               </ul>
+               <div class="user">
+                   <img src="images/user.png" class="userImg"/>
+                   <!--用户信息隐藏框-->
+                   <div class="userDetail">
+                       <div class="userInfoTop">
+                           <a href="#" id="userImgChange" title="换张图片"><img src="images/user.png" alt="user"/></a>
+                           <div>12345678@qq.com</div>
+                       </div>
+                       <div class="userInfoBottom">
+                           <ul class="userItem">
+                               <li><a href="#"><img src="images/setting1.png" alt="setting">设置</a></li>
+                               <li><a href="#"><img src="images/help1.png" alt="help">使用指南</a></li>
+                               <li><a href="#"><img src="images/feedback1.png" alt="feedBack">使用反馈</a></li>
+                               <li><a href="#"><img src="images/out1.png" alt="signOut">退出登录</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!--笔记列表栏-->
+           <div class="noteList">
+               <div class="noteListTop">
+                   <div class="noteListTitle">
+                       <div class="title">笔记</div>
+                       <div class="num_choose">
+                           <span class="noteNum">60条笔记</span>
+                           <div class="chooseItem"><span class="chooseItemBtn">选项<img src="images/bottom.png" class="direction"/></span>
+                               <dl class="chooseItemDl">
+                                   <dt>排序方式</dt>
+                                   <dd class="sortSelection">创建日期(最早优先)<span></span></dd>
+                                   <dd class="sortSelection">创建日期(最新优先)<span></span></dd>
+                                   <dd class="sortSelection">更新日期(最早优先)<span></span></dd>
+                                   <dd class="sortSelection">更新日期(最新优先)<span></span></dd>
+                                   <dd class="sortSelection">标题(升序优先)<span></span></dd>
+                                   <dd class="sortSelection">标题(降序优先)<span></span></dd>
+                                   <dt>查看选项</dt>
+                                   <dd class="checkSelection">显示图片<input type="checkbox" class="chooseBox"/></dd>
+                                   <dd class="checkSelection">显示文字<input type="checkbox" class="chooseBox"/></dd
+                               </dl>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!--笔记列表-->
+               <div class="noteListBottom">
+                   <div class="listTop">
+                       <div class="alarm">
+                           <span>提醒</span>
+                           <span class="clock">2<img src="images/clock2.png"/></span>
+                           <div class="setting">
+                               <img src="images/setting1.png" class="settingBtn"/>
+                               <dl class="settingItem">
+                                   <dt>排序方式</dt>
+                                   <dd class="settingSelection">到期时间<span></span></dd>
+                                   <dd class="settingSelection">自定义<span></span></dd>
+                                   <dt>查看选项</dt>
+                                   <dd>显示即将到期的提醒<input type="checkbox"></dd>
+                                   <dd>显示最近完成的提醒<input type="checkbox"></dd>
+                               </dl>
+                           </div>
+                       </div>
+                       <div class="firstNote"><a href="#" class="firstNoteBtn"><img src="images/noteBook3.png"/>我的第一个笔记本</a>
+                          <div class="firstN">222<a href="#">编辑</a></div>
+                          <div class="firstN">333<a href="#">编辑</a></div>
+                       </div>
+                   </div>
+                   <div class="listBox">
+                       <div class="note">11111text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1
+                           <div class="chooseBtn">
+                               <a href="#"><img src="images/delete3.png" title="删除" class="noteDelete"></a>
+                               <a href="#"><img src="images/clock3.png" title="设置提醒" class="noteDelete"></a>
+                           </div>
+                       </div>
+                       <div class="note">2text1text22221text1text1text1text3331text1text1text1text1text1text1text1text1text1text1
+                           <div class="chooseBtn">
+                               <a href="#"><img src="images/delete3.png" title="删除" class="noteDelete"></a>
+                               <a href="#"><img src="images/clock3.png" title="设置提醒" class="noteDelete"></a>
+                           </div>
+                       </div>
+                       <div class="note">3text1text1text1text1text1text1text245451text1text1text1text1text1text1text1text1text1
+                           <div class="chooseBtn">
+                               <a href="#"><img src="images/delete3.png" title="删除" class="noteDelete"></a>
+                               <a href="#"><img src="images/clock3.png" title="设置提醒" class="noteDelete"></a>
+                           </div>
+                       </div>
+                       <div class="note">4text1text1text1text1text1te3333xt1text1text1text1text1text1text1text1text1text1text1
+                           <div class="chooseBtn">
+                               <a href="#"><img src="images/delete3.png" title="删除" class="noteDelete"></a>
+                               <a href="#"><img src="images/clock3.png" title="设置提醒" class="noteDelete"></a>
+                           </div>
+                       </div>
+                       <div class="note">5text1text1text1text1text1text1te333xt1text1text1text1text1text1text1text1text1text1
+                           <div class="chooseBtn">
+                               <a href="#"><img src="images/delete3.png" title="删除" class="noteDelete"></a>
+                               <a href="#"><img src="images/clock3.png" title="设置提醒" class="noteDelete"></a>
+                           </div>
+                       </div>
+                       <div class="note">6text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1
+                           <div class="chooseBtn">
+                               <a href="#"><img src="images/delete3.png" title="删除" class="noteDelete"></a>
+                               <a href="#"><img src="images/clock3.png" title="设置提醒" class="noteDelete"></a>
+                           </div>
+                       </div>
+                       <div class="note">7text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1
+                           <div class="chooseBtn">
+                               <a href="#"><img src="images/delete3.png" title="删除" class="noteDelete"></a>
+                               <a href="#"><img src="images/clock3.png" title="设置提醒" class="noteDelete"></a>
+                           </div>
+                       </div>
+                       <div class="note">8text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1
+                           <div class="chooseBtn">
+                               <a href="#"><img src="images/delete3.png" title="删除" class="noteDelete"></a>
+                               <a href="#"><img src="images/clock3.png" title="设置提醒" class="noteDelete"></a>
+                           </div>
+                       </div>
+                       <div class="note">9text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1
+                           <div class="chooseBtn">
+                               <a href="#"><img src="images/delete3.png" title="删除" class="noteDelete"></a>
+                               <a href="#"><img src="images/clock3.png" title="设置提醒" class="noteDelete"></a>
+                           </div>
+                       </div>
+                       <div class="note">10text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1
+                           <div class="chooseBtn">
+                               <a href="#"><img src="images/delete3.png" title="删除" class="noteDelete"></a>
+                               <a href="#"><img src="images/clock3.png" title="设置提醒" class="noteDelete"></a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <!--右边部分-->
+       <div class="rightBox">
+           <div class="rightTopMenu">
+               <div class="RTopMenu">
+                   <div class="leftMenu">
+                       <span><a href="#" class="RM"><img src="images/clock2.png"/><span>设置提醒</span></a></span>
+                       <span><a href="#" class="RM"><img src="images/start3.png"/><span>添加快键</span></a></span>
+                       <span><a href="#" class="RM"><img src="images/info1.png"/><span>笔记信息</span></a></span>
+                       <span><a href="#" class="RM"><img src="images/delete2.png"/><span>删除笔记</span></a></span>
+                       <span><a href="#" class="RM"><img src="images/copyLink1.png"/><span>复制笔记链接</span></a></span>
+                   </div>
+                   <div class="rightMenu">
+                       <div class="share">共享<span>共享菜单</span></div>
+                       <div class="extend"><img src="images/expand1.png"/><span>展开</span></div>
+                   </div>
+               </div>
+               <div class="BTopMenu">
+                   <ul class="editMenu">
+                       <li class="fontStyle">
+                           <select>
+                               <option selected value="Gotham">Gotham</option>
+                               <option value="Georgia">Georgia</option>
+                               <option value="Helvetica">Helvetica</option>
+                               <option value="Courier New">Courier New</option>
+                               <option value="Time New Roman">Time New Roman</option>
+                               <option value="Trebuchet">Trebuchet</option>
+                               <option value="Verdana">Verdana</option>
+                           </select>
+                       </li>
+                       <li class="fontSize">
+                           <select>
+                               <option value="8">8</option>
+                               <option value="10">10</option>
+                               <option value="12">12</option>
+                               <option selected value="14">14</option>
+                               <option value="18">18</option>
+                               <option value="24">24</option>
+                               <option value="36">36</option>
+                           </select>
+                       </li>
+                       <li class="fontColor">
+                           <div class="selectColor"><div style="background: black;width:15px;height:15px;margin-top:5px;"></div></div>
+                       </li>
+                       <li>
+                           <img src="images/bold.png" class="bold"/>
+                           <span>加粗</span>
+                       </li>
+                       <li>
+                           <img src="images/italic.png" class="italic"/>
+                           <span>斜体</span>
+                       </li>
+                       <li>
+                           <img src="images/underlined.png" class="underline"/>
+                           <span>下划线</span>
+                       </li>
+                       <li>
+                           <img src="images/deleteLine.png" class="deleteLine"/>
+                           <span>删除线</span>
+                       </li>
+                       <li>
+                           <img src="images/code.png" class="code"/>
+                           <span>代码快</span>
+                       </li>
+                       <li>
+                           <img src="images/check_box.png" class="checkBox"/>
+                           <span>复选框</span>
+                       </li>
+                       <li>
+                           <img src="images/list.png" class="list"/>
+                           <span>项目列表</span>
+                       </li>
+                       <li>
+                           <img src="images/format_number.png" class="formatList"/>
+                           <span>标号列表</span>
+                       </li>
+                       <li>
+                           <img src="images/link.png" class="link"/>
+                           <span>插入链接</span>
+                       </li>
+                       <li>
+                           <img src="images/attachment.png" class="attachment"/>
+                           <span>添加附件</span>
+                       </li>
+                       <li>
+                           <img src="images/table.png" class="table"/>
+                           <span>表格</span>
+                       </li>
+                       <li>
+                           <img src="images/separateLine.png" class="separateLine"/>
+                           <span>分界线</span>
+                       </li>
+                       <li>
+                            <img src="images/align-left.png" class="alignLeft"/>
+                           <span>左对齐</span>
+                       </li>
+                       <li>
+                           <img src="images/align-center.png" class="alignCenter"/>
+                           <span>居中</span>
+                       </li>
+                       <li>
+                           <img src="images/align-right.png" class="alignRight"/>
+                           <span>右对齐</span>
+                       </li>
+                       <li>
+                           <img src="images/indent_decrease.png" class="indentD"/>
+                           <span>减少缩进</span>
+                       </li>
+                       <li>
+                           <img src="images/indent_increase_icon.png" class="indentI"/>
+                           <span>缩进</span>
+                       </li>
+                       <li>
+                           <img src="images/sub.png" class="sub"/>
+                           <span>下标</span>
+                       </li>
+                       <li>
+                           <img src="images/sup.png" class="sup"/>
+                           <span>上标</span>
+                       </li>
+                       <li>
+                           <img src="images/clear_format.png" class="clearFormat"/>
+                           <span>清除格式</span>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           <div class="editTextBox" contenteditable="true"></div>
+       </div>
+   </div>
+</div>
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="common.js"></script>
+</body>
+</html>
