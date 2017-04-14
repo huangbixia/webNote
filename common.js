@@ -183,6 +183,48 @@ $(document).ready(function(){
         $(this).find("span").html("扩展");
     });
 
+//生成取色板
+    for(var j=0;j<40;j++)
+    {
+        var colorDiv = "<div class='color'></div>";
+        $(".colorBoard").append(colorDiv);
+    }
+    var colorNum = $(".colorBoard").find("div").length;
+    var color =  $(".colorBoard").find("div");
+
+    //颜色数组
+    var allColor = ["#000000","#993303","#303308","#043203","#00335b","#000479","#323594","#323232","#860000","#ff6000","#7e7e0e",
+        "#008402","#00838a","#0001fc","#6963a1","#867f79","#fe000e","#fc9e00","#9acc00","#279d6d","#38ccbe",
+        "#2f69ff","#84006e","#bdc2bc","#ff00fe","#ffcb00","#faff00","#06fd00","#05fdfd","#06c8fb","#9c2f72",
+        "#bdc2bc","#fc98d8","#fbff9c","#fbcba5","#cffeca","#ccfffe","#99cef8","#cf9aea","#ffffff"];
+
+    for(var k=0;k<colorNum;k++)
+    {
+        color.eq(k).css({background:allColor[k],border:"1px solid "+allColor[k]+""});
+
+    }
+    //点击相应的颜色，就显示相应的颜色
+    color.each(function(i){
+        $(this).click(function(){
+            $(".selectedColor").css("background",allColor[i]);
+        });
+    });
+
+    $(".selectedColor").toggle(function(){
+        $(".colorBoard").show();
+    },function(){
+        if($(".colorBoard").css("display") =="none")
+        {
+            $(".colorBoard").show();
+        }
+        else
+        {
+            $(".colorBoard").hide();
+        }
+
+    });
+
+
 //编辑区菜单选项鼠标悬浮，提示文字
     $(".editMenu").find("li").each(function(){
         hoverShowText($(this));
@@ -192,10 +234,10 @@ $(document).ready(function(){
     $(".editTextBox").text($(".note:eq(0)").text());
 
 //点击可视区任何地方
-    $(window).bind("click",function(){
+    $(document).bind("click",function(){
         $(".chooseItemDl").hide();
         $(".settingItem").hide();
-
+        $(".colorBoard").hide();
     });
 
 });

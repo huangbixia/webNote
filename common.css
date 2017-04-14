@@ -1,3 +1,4 @@
+/*-----------全局样式-----------------*/
 *
 {
     margin:0;
@@ -23,6 +24,7 @@ img
     height:100%;
     overflow: hidden;
 }
+/*----------------左边两个框的样式------------*/
 .leftBox
 {
     width:31%;
@@ -469,6 +471,7 @@ img
     height:20px;
     vertical-align: middle;
 }
+/*--------------右边大框的样式--------------*/
 .rightBox
 {
     width:935px;
@@ -638,6 +641,54 @@ img
     position: absolute;
     top:-10px;
     left:15px;
+}
+/*--------------取色板样式------------------*/
+.selectColor
+{
+    position: relative;
+}
+.selectColor .selectedColor
+{
+    background: black;
+    width:13px;
+    height:13px;
+    margin-top:5px;
+    cursor:pointer;
+    border:1px solid #b0b0b0;
+}
+.colorBoard
+{
+    position: absolute;
+    width:160px;
+    height:100px;
+    left:-80px;
+    top:25px;
+    background: white;
+    z-index: 999;
+    border:1px solid #cccccc;
+    padding:5px 10px 10px 10px;
+    -webkit-box-shadow: 1px 1px 5px #dbdbdb,-1px -1px 5px #dbdbdb;
+    -moz-box-shadow: 1px 1px 5px #dbdbdb,-1px -1px 5px #dbdbdb;
+    box-shadow: 1px 1px 5px #dbdbdb,-1px -1px 5px #dbdbdb;
+    display: none;
+}
+.colorBoard:before
+{
+    content: "";
+    border:6px solid;
+    border-color: transparent transparent #c8c8c8 transparent;
+    position: absolute;
+    top:-13px;
+    left:80px;
+}
+.color
+{
+    width:13px;
+    height:13px;
+    border:1px solid #f3f3f3;
+    float: left;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
 }
 .editTextBox
 {
